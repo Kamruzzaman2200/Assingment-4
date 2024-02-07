@@ -11,3 +11,4 @@ function calculateMoney(ticket){
     }
     
 }
+console.log(calculateMoney(30))
