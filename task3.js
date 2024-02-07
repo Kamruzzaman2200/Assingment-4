@@ -3,14 +3,14 @@ function deleteInvalids(arr) {
         return "Invalid Array";
     }
     else{
-        var validValues = [];
+        var valid = [];
     for (var i = 0; i < arr.length; i++) {
         if (typeof arr[i] === 'number' && !isNaN(arr[i])) {
-            validValues.push(arr[i]);
+            valid.push(arr[i]);
         }
     }
 
-    return validValues;
+    return valid;
     }
 }
 console.log(deleteInvalids([1, null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }])); // Output: [1, 18, -19]
